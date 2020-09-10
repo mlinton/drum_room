@@ -966,7 +966,7 @@ local function add_global_params()
   
   local channels = {"All"}
   for i = 1, 16 do table.insert(channels, i) end
-  params:add{type = "option", id = "midi_in_channel", name = "MIDI In Channel", options = channels}
+  params:add{type = "option", id = "midi_in_channel", name = "MIDI In Channel", options = channels, default = 10}
   
   params:add{type = "number", id = "bend_range", name = "Pitch Bend Range", min = 1, max = 48, default = 2}
   
